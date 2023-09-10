@@ -1,0 +1,88 @@
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 500px;
+    margin:0 auto;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    min-width: 325px;
+}
+
+.content{
+    margin: 8px;
+}
+
+input{
+    border: none;
+    background-color:#eeee ;
+    color: #222;
+    padding: 16px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button{
+    border: none;
+    background-color: cornflowerblue;
+    font-size: 24px;
+    color: black;
+    padding: 16px;
+    margin-left: 10px;
+    height: 65px;
+    font-weight: 600;
+    margin-top:10px ;
+}
+
+button:hover{
+    cursor: pointer;
+    color:white;
+    background-color: black;
+    transition: .5s all ease-in-out;
+
+}
+
+#tanya {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#loading{
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border-top: 15px solid cornflowerblue;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    animation:1s spin infinite linear;
+
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
